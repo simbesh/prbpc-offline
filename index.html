@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="/login.css" >
+
+    <script src="/login.js"></script>
+  </head>
+
+  <body class="text-center pt-0">
+    <form class="form-signin" id="loginForm" name="loginForm" style="display: none;">
+        <h1 class="h3 mb-3 font-weight-normal">PRBPC.club</h1>
+        <!-- <img class="mb-4" src="https://i.imgur.com/jG2sQPr.png" alt="" width="72" height="72"> -->
+        <!-- <img class="logon_img mb-4" src="https://i.imgur.com/jduDxie.png" alt="" > -->
+        <!-- <img class="logon_img mb-4" src="https://i.imgur.com/sfl3NKH.jpg" alt="" > -->
+        <!-- <img class="logon_img mb-4" src="https://i.imgur.com/yZ2VQND.jpg" alt="" > -->
+        <img class="logon_img mb-4" src="/favicon/prbpc-512.png" alt="" >
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="username" id="inputUsername" name="inputUsername" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="invalid-feedback">
+            Incorrect username or password. 
+        </div>
+        <br>
+        <!-- <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me (doesnt work)
+        </label> -->
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <button class="btn show_register_btn btn-lg btn-outline-success btn-block" id="show_register_btn" type="button" href="/register">Register</button>
+      <p class="mt-5 mb-3 text-muted">&copy; PRBPC 2018-2019</p>
+    </form>
+
+
+    <!-- REGISTER VIEW -->
+    <form class="form-register" id="registerForm" name="registerForm" style="display: none;">
+        <h1 class="h3 mb-3 font-weight-normal">PRBPC.club</h1>
+        <label for="inputUsernameRegister" class="sr-only">Username</label>
+        <input type="username" id="inputUsernameRegister" name="inputUsernameRegister" class="form-control" placeholder="Login username" required autofocus>
+        <select class="form-control" id="bettingNames" name="bettingName" readonly>
+          <option hidden >Select your betting name</option>
+          <option>Al</option>
+          <option>Bell</option>
+          <option>Gumby</option>
+          <option>Jake</option>
+          <option>Jaso</option>
+          <option>Jdub</option>
+          <option>Jones</option>
+          <option>Mouse</option>
+          <option>Marc</option>
+          <option>Powell</option>
+          <option>Searle</option>
+          <option>Vicks</option>
+        </select>
+        <div class="invalid-feedback">Select your name ^</div>
+        <label for="inputPasswordRegister" class="sr-only">Password</label>
+        <input type="password" id="inputPasswordRegister" name="inputPassword" class="form-control" placeholder="Password" required>        
+        <label for="inputPassword2Register" class="sr-only">Confirm Password</label>
+        <input type="password" id="inputPassword2Register" name="inputPassword2" class="form-control" placeholder="Confirm Password" required>
+        <div class="invalid-feedback">Passwords do not match.</div>
+        <br>
+        <!-- <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me (doesnt work)
+        </label> -->
+      </div>
+      <button class="btn btn-lg btn-success btn-block" type="submit">Register</button>
+      <button class="btn show_login_btn btn-lg btn-outline-primary btn-block" id="show_login_btn" type="button" href="/login">Log in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; PRBPC 2018-2019</p>
+    </form>
+    
+  </body>
+</html>
